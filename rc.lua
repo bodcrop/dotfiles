@@ -526,8 +526,8 @@ globalkeys = mytable.join(
     awful.key({ modkey }, "q", function () awful.spawn(browser) end,
               {description = "run browser", group = "launcher"}),
     
-    awful.key({modkey}, "c", function () awful.spawn("google-chrome") end, 
-              {description = "run browser", group = "launcher"}),
+    awful.key({modkey}, "c", function () awful.spawn("brave-browser --new-window https://search.brave.com/") end, 
+            {description = "run brave", group = "launcher"}),
 
     -- Default
     --[[ Menubar
@@ -841,4 +841,4 @@ awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("blueman-manager")
 awful.spawn.with_shell("spotify")
 awful.spawn.with_shell("slack")
-
+awful.spawn.with_shell("signal-desktop")
